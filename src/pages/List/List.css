@@ -1,0 +1,87 @@
+/* Container */
+.list-container {
+  width: 75%;
+  padding: 40px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Heading */
+.list-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: tomato;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Table wrapper */
+.list-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Header row */
+.list-table-header {
+  display: grid;
+  grid-template-columns: 100px 1.5fr 1fr 1fr 100px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 2px solid tomato;
+  color: #333;
+}
+
+/* Data row */
+.list-table-row {
+  display: grid;
+  grid-template-columns: 100px 1.5fr 1fr 1fr 100px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+
+.list-table-row:hover {
+  background-color: #fff3f0;
+}
+
+/* Image */
+.food-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.remove-button {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #d13b1f;
+  transform: scale(1.05);
+}
+
+/* No data */
+.no-data {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}

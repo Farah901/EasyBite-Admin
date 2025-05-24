@@ -1,0 +1,69 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+.navbar .logo{
+    width: max(8%,80px);
+}
+
+.msg-icon-container{
+    position: relative;
+}
+.msg-icon-container i{
+    content: '2';
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.icons{
+    display: flex;
+}
+.msg-icon{
+    position: relative;
+    top: 60%;
+    transform: translateY(-60%);
+    width: 35px;
+    margin-right: 20px;
+}
+
+.navbar .profile{
+    width: 50px;
+}
+
+.search-items{
+    position: relative;
+}
+.search-items input{
+    padding: 5px;
+    padding-left: 30px;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 300;
+    color: gray;
+}
+.search-items i{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: tomato;
+}
+.search-items input::placeholder {
+    color: tomato;
+    font-weight: 200;
+}

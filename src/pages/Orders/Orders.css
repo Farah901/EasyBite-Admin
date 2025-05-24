@@ -1,0 +1,102 @@
+.orders-container {
+  padding: 40px;
+  background-color: #fdfdfd;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.orders-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: tomato;
+  font-weight: bold;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  background: #fff;
+  border-left: 6px solid tomato;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.order-item:hover {
+  transform: translateY(-4px);
+}
+
+.order-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.order-details {
+  flex: 1 1 300px;
+}
+
+.order-foods {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.order-customer {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.order-address {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.order-phone {
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
+
+.order-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.order-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: tomato;
+}
+
+.order-status {
+  padding: 8px 12px;
+  border: 1px solid tomato;
+  border-radius: 6px;
+  background-color: #fff;
+  font-weight: 500;
+  color: tomato;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-status:hover {
+  background-color: tomato;
+  color: white;
+}
