@@ -109,7 +109,7 @@ const Orders = ({ url }) => {
             </div>
             <div className="order-meta">
               <p>Items: {order.items.length}</p>
-              <p className="order-price">${order.amount}</p>
+              <p className="order-price">{order.amount} DH</p>
               <select
                 className="order-status"
                 onChange={(e) =>
