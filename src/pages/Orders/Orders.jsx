@@ -38,53 +38,53 @@ const Orders = ({ url }) => {
     fetchAllOrders();
   }, []);
 
-  // Static example orders
-  const staticOrders = [
-    {
-      _id: 'static1',
-      items: [
-        { name: 'Margherita Pizza', quantity: 1 },
-        { name: 'Garlic Bread', quantity: 2 },
-      ],
-      address: {
-        firstName: 'Alice',
-        lastName: 'Johnson',
-        street: '123 Tomato Lane',
-        city: 'Flavor Town',
-        state: 'CA',
-        country: 'USA',
-        zipcode: '90001',
-        phone: '123-456-7890',
-      },
-      amount: 22.99,
-      status: 'Out for delivery',
-    },
-    {
-      _id: 'static2',
-      items: [
-        { name: 'Pad Thai', quantity: 1 },
-      ],
-      address: {
-        firstName: 'Bob',
-        lastName: 'Smith',
-        street: '456 Spice St',
-        city: 'Tastyville',
-        state: 'TX',
-        country: 'USA',
-        zipcode: '73301',
-        phone: '987-654-3210',
-      },
-      amount: 12.5,
-      status: 'Delivered',
-    },
-  ];
+  // // Static example orders
+  // const staticOrders = [
+  //   {
+  //     _id: 'static1',
+  //     items: [
+  //       { name: 'Margherita Pizza', quantity: 1 },
+  //       { name: 'Garlic Bread', quantity: 2 },
+  //     ],
+  //     address: {
+  //       firstName: 'Alice',
+  //       lastName: 'Johnson',
+  //       street: '123 Tomato Lane',
+  //       city: 'Flavor Town',
+  //       state: 'CA',
+  //       country: 'USA',
+  //       zipcode: '90001',
+  //       phone: '123-456-7890',
+  //     },
+  //     amount: 22.99,
+  //     status: 'Out for delivery',
+  //   },
+  //   {
+  //     _id: 'static2',
+  //     items: [
+  //       { name: 'Pad Thai', quantity: 1 },
+  //     ],
+  //     address: {
+  //       firstName: 'Bob',
+  //       lastName: 'Smith',
+  //       street: '456 Spice St',
+  //       city: 'Tastyville',
+  //       state: 'TX',
+  //       country: 'USA',
+  //       zipcode: '73301',
+  //       phone: '987-654-3210',
+  //     },
+  //     amount: 12.5,
+  //     status: 'Delivered',
+  //   },
+  // ];
 
   return (
     <div className="orders-container">
       <h2 className="orders-title">Customer Orders</h2>
 
       <div className="order-list">
-        {[...staticOrders, ...orders].map((order, index) => (
+        {orders.map((order, index) => (
           <div key={order._id || index} className="order-item">
             <img src={assets.parcel_icon} alt="parcel" className="order-icon" />
             <div className="order-details">

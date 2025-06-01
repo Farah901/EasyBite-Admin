@@ -21,13 +21,14 @@ const List = ({ url }) => {
 
   const removeFood = async (foodId) => {
     try {
+      if(confirm('Are u sure u want to remove this item?')){
       const response = await axios.post(`${url}/api/food/remove`, { id: foodId });
       if (response.data.success) {
         toast.success(response.data.message);
         fetchList();
       } else {
         toast.error("Failed to remove food item.");
-      }
+      }}
     } catch (error) {
       toast.error("An error occurred while removing the item.");
     }
@@ -49,34 +50,13 @@ const List = ({ url }) => {
           <span>Action</span>
         </div>
 
-        {/* Static Examples */}
-        <div className="list-table-row">
-          <img src="https://via.placeholder.com/100" alt="Example 1" className="food-image" />
-          <span>Spaghetti Bolognese</span>
-          <span>Italian</span>
-          <span>$12.99</span>
-          <button className="remove-button" onClick={() => toast.info("Static item - not removable")}>
-            Remove
-          </button>
-        </div>
-
-        <div className="list-table-row">
-          <img src="https://via.placeholder.com/100" alt="Example 2" className="food-image" />
-          <span>Vegan Buddha Bowl</span>
-          <span>Vegetarian</span>
-          <span>$10.50</span>
-          <button className="remove-button" onClick={() => toast.info("Static item - not removable")}>
-            Remove
-          </button>
-        </div>
-
         {/* Dynamic Items */}
         {list.length === 0 ? (
           <p className="no-data">No food items available.</p>
         ) : (
           list.map((item, index) => (
             <div key={index} className="list-table-row">
-              <img src={`${url}/images/${item.image}`} alt={item.name} className="food-image" />
+              <img src={`${item.image}`} alt={item.name} className="food-image" />
               <span>{item.name}</span>
               <span>{item.category}</span>
               <span>${item.price}</span>

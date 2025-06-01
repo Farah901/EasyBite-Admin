@@ -117,7 +117,7 @@ const Add = ({ url }) => {
           </div>
 
           <div className="form-group">
-            <label>Price ($)</label>
+            <label>Price (MAD)</label>
             <input
               type="number"
               name="price"

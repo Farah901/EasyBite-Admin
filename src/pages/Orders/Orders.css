@@ -1,16 +1,18 @@
 .orders-container {
-  padding: 40px;
-  background-color: #fdfdfd;
-  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
 }
 
 .orders-title {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-  color: tomato;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  border-left: 6px solid #ff6347;
+  padding-left: 12px;
 }
 
 .order-list {
@@ -21,82 +23,76 @@
 
 .order-item {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-  background: #fff;
-  border-left: 6px solid tomato;
-  padding: 20px;
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s;
 }
 
 .order-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .order-icon {
   width: 50px;
-  height: 50px;
+  margin-right: 20px;
+  filter: hue-rotate(-10deg); /* slight tomato tint */
 }
 
 .order-details {
-  flex: 1 1 300px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #444;
 }
 
 .order-foods {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .order-customer {
-  font-size: 16px;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
 }
 
-.order-address {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.4;
-  margin-bottom: 5px;
-}
-
+.order-address p,
 .order-phone {
   font-size: 14px;
-  color: #444;
-  margin-top: 5px;
+  color: #666;
 }
 
 .order-meta {
+  text-align: right;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 10px;
-  min-width: 150px;
+  flex: 1;
 }
 
 .order-price {
   font-size: 16px;
-  font-weight: bold;
-  color: tomato;
+  font-weight: 700;
+  color: #ff6347; /* Tomato red for price */
 }
 
 .order-status {
-  padding: 8px 12px;
-  border: 1px solid tomato;
+  padding: 6px 10px;
   border-radius: 6px;
-  background-color: #fff;
-  font-weight: 500;
-  color: tomato;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff8f6;
+  color: #333;
+  outline: none;
+  transition: border 0.2s;
 }
 
+.order-status:focus,
 .order-status:hover {
-  background-color: tomato;
-  color: white;
+  border-color: #ff6347;
 }
