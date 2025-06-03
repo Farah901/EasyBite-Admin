@@ -52,7 +52,7 @@ const Add = ({ url }) => {
   return (
     <div className="add-container">
       <form className="add-form" onSubmit={handleSubmit}>
-        <h2>Add New Product</h2>
+        <h2>Add New Dish</h2>
 
         <div className="form-group image-upload">
           <label htmlFor="image">
