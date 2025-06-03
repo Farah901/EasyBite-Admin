@@ -11,7 +11,7 @@ import Dashboard from './pages/Dashboard/Dashboard'
 
 const App = () => {
 
-  const url = "https://backend-api-test-2aggr1twr-farah901s-projects.vercel.app"
+  const url = "https://backend-api-test-aqsfozd55-farah901s-projects.vercel.app"
 
   return (
     <div>
