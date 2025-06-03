@@ -22,4 +22,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://backend-api-test-69po9zp6r-farah901s-projects.vercel.app'
+export const url = 'https://backend-api-test-lcdgyykhq-farah901s-projects.vercel.app/'
