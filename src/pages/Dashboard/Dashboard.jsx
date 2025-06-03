@@ -33,7 +33,7 @@ function Dashboard() {
     const fetchStats = async () => {
       try {
         const res = await axios.get(
-          "https://backend-api-test-lcdgyykhq-farah901s-projects.vercel.app/dashboard/stats"
+          "https://backend-api-test-e1kdqnq8b-farah901s-projects.vercel.app/dashboard/stats"
         );
         if (res.data.success) {
           console.log("Dashboard stats:", res.data.data); // For debugging
